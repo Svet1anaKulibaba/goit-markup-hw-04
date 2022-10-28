@@ -46,15 +46,18 @@ img {
   --first-title-color: #212121;
   --design-color: #2196f3;
 }
-/*1й контейнер----------------------------*/
+
 .conteiner {
-  display: flex;
   /*width: 1200px;
   /*padding: 0px 15px;
   outline: 1px solid red;*/
-  text-align: center;
-  justify-content: center;
+
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
+/*1й контейнер----------------------------*/
 .page-header .conteiner {
   justify-content: center;
   display: flex;
@@ -140,6 +143,9 @@ nav {
   width: 100%;
   height: 100%;
 }
+.contacts-item:hover {
+  color: #2196f3;
+}
 .contacts-link {
   color: #757575;
   align-items: center;
@@ -154,7 +160,7 @@ nav {
 }
 .contacts-icon {
   align-items: center;
-  fill: #757575;
+  fill: currentColor;
 
   margin-right: 10px;
 }
@@ -232,7 +238,6 @@ nav {
 }
 /*2 coteiner--------------------------*/
 .topic-conteiner {
-  max-width: 1600px;
   display: flex;
   justify-content: center;
 }
@@ -280,7 +285,6 @@ nav {
   display: block;
   text-align: center;
   justify-content: center;
-  max-width: 1600px;
   padding-top: 0;
 }
 .picture-title {
@@ -290,11 +294,8 @@ nav {
 }
 
 .pic-conteiner {
-  padding-left: 15px;
-  padding-right: 15px;
   text-align: center;
-  justify-content: center;
-  max-width: 1600px;
+  display: flex;
 }
 
 .img-conteiner {
@@ -311,7 +312,9 @@ nav {
   flex-wrap: wrap;
   background-color: #f5f4fa;
   display: flex;
-  max-width: 1600px;
+}
+.team {
+  display: flex;
 }
 .card {
   padding-top: 30px;
@@ -396,7 +399,6 @@ nav {
 .client-conteiner {
   flex-wrap: wrap;
   display: flex;
-  max-width: 1600px;
 }
 .client-title {
   padding-bottom: 50px;
@@ -440,7 +442,7 @@ nav {
 }
 .footer .conteiner {
   align-items: flex-start;
-
+  margin-left: 215px;
   display: block;
   width: max-content;
 }
@@ -452,6 +454,7 @@ nav {
   padding-bottom: 60px;
   margin: 0;
   max-width: 1200px;
+  padding: auto 0;
 }
 .address-footer {
   font-style: normal;
@@ -542,7 +545,7 @@ nav {
 .button-conteiner {
   justify-content: center;
   text-align: center;
-  max-width: 1600px;
+
   display: block;
   background-color: #fff;
 }
@@ -582,8 +585,6 @@ nav {
 }
 .set-conteiner {
   text-align: center;
-
-  max-width: 1600px;
 }
 .flex-conteiner {
   flex-wrap: wrap;
@@ -604,7 +605,7 @@ nav {
   width: 370px;
   height: 404px;
 }
-.projects :hover {
+.flex-el:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
